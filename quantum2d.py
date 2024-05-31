@@ -42,7 +42,7 @@ MAPBOX_TOKEN = st.secrets["MAPBOX_TOKEN"]
 
 llm = ChatOpenAI(model_name = 'gpt-4o', # 'gpt-3.5-turbo', # 'text-davinci-003' , 'gpt-3.5-turbo'
              temperature=0.2,
-             max_tokens=1200)
+             max_tokens=2200)
 
 article_template = """
 I want you to act as a scientific consultant to help intelligence 
@@ -678,7 +678,7 @@ topic_keywords = df_selected_centroid['keywords'].to_list()[0]
 #llm_topic_description = get_topic_llm_description(topic_keywords)
 #st.write(llm_topic_description)
 
-topic_abstracts = dfinfo[dfinfo["cluster"] == selected_cluster]['abstract'].dropna().to_list()[:100]
+topic_abstracts = dfinfo[dfinfo["cluster"] == selected_cluster]['abstract'].dropna().to_list()[:]
 #st.write(topic_abstracts[:5])
 detailed_llm_topic_description = get_detailed_topic_llm_description(topic_abstracts)
 st.write(detailed_llm_topic_description)
