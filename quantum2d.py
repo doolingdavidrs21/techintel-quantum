@@ -167,7 +167,7 @@ st.set_page_config(layout='wide')
 
 st.title("Example: Quantum Technologies flagged by the Defense Science Board")
 st.markdown("""
-[Applications of Qauntum Technologies, October 2019](https://dsb.cto.mil/reports/2010s/DSB_QuantumTechnologies_Executive%20Summary_10.23.2019_SR.pdf)
+[Applications of Qauntum Technologies, October 2019](https://crsreports.congress.gov/product/pdf/IF/IF11836)
 
 * Quantum computer (theoretical computation device relying on quantum mechanics), 量子计算机, Квантовый компьютер
 * Quantum cryptography, 量子密碼學, Квантовая криптография
